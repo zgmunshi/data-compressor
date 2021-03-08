@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Data / String Compressor</title>
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+    <body>
+        <form class="form-horizontal">
+                <fieldset>
+                
+                <!-- Form Name -->
+                <legend>Data Compressor</legend>
+                
+                <!-- Select Basic -->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="selectbasic">Compression Type</label>
+                  <div class="col-md-5">
+                    <select id="selectbasic" name="selectbasic" class="form-control">
+                      <option value="default">Default</option>
+                      <option value="base64">Base64</option>
+                      <option value="utf16">Utf16</option>
+                      <option value="uint8">UInt8</option>
+                      <option value="encodeuri">EncodeURI</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <!-- Text input-->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="textinput">Key</label>  
+                  <div class="col-md-5">
+                  <input id="textinput" name="textinput" type="text" placeholder="Enter key for data" class="form-control input-md" required="">
+                    
+                  </div>
+                </div>
+                
+                <!-- Textarea -->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="textarea">Data</label>
+                  <div class="col-md-4">                     
+                    <textarea class="form-control" id="textarea" name="textarea">Enter Data to compress</textarea>
+                  </div>
+                </div>
+                
+                <!-- Multiple Checkboxes -->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="checkboxes">Storage</label>
+                  <div class="col-md-4">
+                  <div class="checkbox">
+                    <label for="checkboxes-0">
+                      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+                      Store Locally
+                    </label>
+                    </div>
+                  </div>
+                </div>
+                
+                </fieldset>
+                </form>
+                
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="modules/common/js/helper.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
