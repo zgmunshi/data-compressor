@@ -32,6 +32,6 @@ Localstorage `setItem` & `getItem` is overrided to have compressed data
 ```
 setItem - sets item to localstorage
 getItem - get item from localstorage
-size(key) - get size of localstorage or size of specific key
+size(key) - get size of localstorage or size of specific key in bytes
 sizeFormat(size,format) - get size in specified format default is bytes -> bytes, kb, mb,gb, tb
 ```
