@@ -22,8 +22,16 @@ options = {
 ## API
 ```
 dataCompress.init(options);
-dataCompress.compress(str);
-dataCompress.decompress(str);
+dataCompress.init(options) - Initializing the plugin (optional), if not initialized, plugin will auto initialize with default values
+dataCompress.compress(string) - compress the passed string as per the compression type set on initialization
+dataCompress.decompress(compressedString) - pass the valid compressed string to get back the original data
+```
+## Example
+```
+dataCompress.init(options);
+let originalString = "Welcome to the world of data compression !!!",
+    compressedString = dataCompress.compress(originalString);
+    uncompressedString = dataCompress.decompress(compressedString);
 ```
 
 ## LocalStorage API
